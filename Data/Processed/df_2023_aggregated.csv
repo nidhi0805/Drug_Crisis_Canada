@@ -1,0 +1,153 @@
+Type_Event,Region,Substance,Source,Specific_Measure,PRUID,Time_Period,Year_Quarter,Aggregator,Disaggregator,Unit,Value
+Accidental apparent opioid toxicity deaths,Alberta,Opioids,Deaths,Overall numbers,48,By year,2023,0 to 19 years,Female,Number,5561.0
+Accidental apparent opioid toxicity deaths,British Columbia,Opioids,Deaths,Overall numbers,59,By year,2023,0 to 19 years,Female,Number,7092.0
+Accidental apparent opioid toxicity deaths,Canada,Opioids,Deaths,Overall numbers,1,By year,2023,0 to 19 years,Female,Number,23924.0
+Accidental apparent opioid toxicity deaths,Manitoba,Opioids,Deaths,Overall numbers,46,By year,2023,0 to 19 years,Female,Number,687.0
+Accidental apparent opioid toxicity deaths,New Brunswick,Opioids,Deaths,Overall numbers,13,By year,2023,0 to 19 years,Female,Number,285.0
+Accidental apparent opioid toxicity deaths,Newfoundland and Labrador,Opioids,Deaths,Overall numbers,10,By year,2023,0 to 19 years,Female,Number,68.0
+Accidental apparent opioid toxicity deaths,Northwest Territories,Opioids,Deaths,Overall numbers,61,By year,2023,0 to 19 years,Female,Number,4.0
+Accidental apparent opioid toxicity deaths,Nova Scotia,Opioids,Deaths,Overall numbers,12,By year,2023,0 to 19 years,Female,Number,189.0
+Accidental apparent opioid toxicity deaths,Nunavut,Opioids,Deaths,Overall numbers,62,By year,2023,0 to 19 years,Female,Number,0.0
+Accidental apparent opioid toxicity deaths,Ontario,Opioids,Deaths,Overall numbers,35,By year,2023,0 to 19 years,Female,Number,7565.0
+Accidental apparent opioid toxicity deaths,Prince Edward Island,Opioids,Deaths,Overall numbers,11,By year,2023,0 to 19 years,Female,Number,7.0
+Accidental apparent opioid toxicity deaths,Quebec,Opioids,Deaths,Overall numbers,24,By year,2023,0 to 19 years,Female,Number,1499.0
+Accidental apparent opioid toxicity deaths,Saskatchewan,Opioids,Deaths,Overall numbers,47,By year,2023,0 to 19 years,Female,Number,933.0
+Accidental apparent opioid toxicity deaths,Yukon,Opioids,Deaths,Overall numbers,60,By year,2023,0 to 19 years,Female,Number,34.0
+Accidental apparent stimulant toxicity deaths,Alberta,Stimulants,Deaths,Overall numbers,48,By year,2023,0 to 19 years,Female,Number,0.0
+Accidental apparent stimulant toxicity deaths,British Columbia,Stimulants,Deaths,Overall numbers,59,By year,2023,0 to 19 years,Female,Number,4959.0
+Accidental apparent stimulant toxicity deaths,Canada,Stimulants,Deaths,Overall numbers,1,By year,2023,0 to 19 years,Female,Number,13722.0
+Accidental apparent stimulant toxicity deaths,Manitoba,Stimulants,Deaths,Overall numbers,46,By year,2023,0 to 19 years,Female,Number,753.0
+Accidental apparent stimulant toxicity deaths,New Brunswick,Stimulants,Deaths,Overall numbers,13,By year,2023,0 to 19 years,Female,Number,231.0
+Accidental apparent stimulant toxicity deaths,Newfoundland and Labrador,Stimulants,Deaths,Overall numbers,10,By year,2023,0 to 19 years,Female,Number,74.0
+Accidental apparent stimulant toxicity deaths,Northwest Territories,Stimulants,Deaths,Overall numbers,61,By year,2023,0 to 19 years,Female,Number,7.0
+Accidental apparent stimulant toxicity deaths,Nova Scotia,Stimulants,Deaths,Overall numbers,12,By year,2023,0 to 19 years,Female,Number,189.0
+Accidental apparent stimulant toxicity deaths,Nunavut,Stimulants,Deaths,Overall numbers,62,By year,2023,0 to 19 years,Female,Number,0.0
+Accidental apparent stimulant toxicity deaths,Ontario,Stimulants,Deaths,Overall numbers,35,By year,2023,0 to 19 years,Female,Number,6616.0
+Accidental apparent stimulant toxicity deaths,Prince Edward Island,Stimulants,Deaths,Overall numbers,11,By year,2023,0 to 19 years,Female,Number,0.0
+Accidental apparent stimulant toxicity deaths,Quebec,Stimulants,Deaths,Overall numbers,24,By year,2023,0 to 19 years,Female,Number,0.0
+Accidental apparent stimulant toxicity deaths,Saskatchewan,Stimulants,Deaths,Overall numbers,47,By year,2023,0 to 19 years,Female,Number,861.0
+Accidental apparent stimulant toxicity deaths,Yukon,Stimulants,Deaths,Overall numbers,60,By year,2023,0 to 19 years,Female,Number,32.0
+Accidental opioid-related poisoning ED visits,Alberta,Opioids,Emergency Department (ED) Visits,Overall numbers,48,By year,2023,,,Number,12306.0
+Accidental opioid-related poisoning ED visits,Canada,Opioids,Emergency Department (ED) Visits,Overall numbers,1,By year,2023,0 to 19 years,Female,Number,55026.0
+Accidental opioid-related poisoning ED visits,Nova Scotia,Opioids,Emergency Department (ED) Visits,Overall numbers,12,By year,2023,,,Number,7.0
+Accidental opioid-related poisoning ED visits,Ontario,Opioids,Emergency Department (ED) Visits,Overall numbers,35,By year,2023,,,Number,21432.0
+Accidental opioid-related poisoning ED visits,Prince Edward Island,Opioids,Emergency Department (ED) Visits,Overall numbers,11,By year,2023,,,Number,92.0
+Accidental opioid-related poisoning ED visits,Saskatchewan,Opioids,Emergency Department (ED) Visits,Overall numbers,47,By year,2023,,,Number,2988.0
+Accidental opioid-related poisoning ED visits,Yukon,Opioids,Emergency Department (ED) Visits,Overall numbers,60,By year,2023,,,Number,106.0
+Accidental opioid-related poisoning hospitalizations,Alberta,Opioids,Hospitalizations,Overall numbers,48,By year,2023,,,Number,2016.0
+Accidental opioid-related poisoning hospitalizations,British Columbia,Opioids,Hospitalizations,Overall numbers,59,By year,2023,,,Number,3492.0
+Accidental opioid-related poisoning hospitalizations,Canada,Opioids,Hospitalizations,Overall numbers,1,By year,2023,0 to 19 years,Female,Number,14070.0
+Accidental opioid-related poisoning hospitalizations,Manitoba,Opioids,Hospitalizations,Overall numbers,46,By year,2023,,,Number,198.0
+Accidental opioid-related poisoning hospitalizations,New Brunswick,Opioids,Hospitalizations,Overall numbers,13,By year,2023,,,Number,108.0
+Accidental opioid-related poisoning hospitalizations,Newfoundland and Labrador,Opioids,Hospitalizations,Overall numbers,10,By year,2023,,,Number,31.0
+Accidental opioid-related poisoning hospitalizations,Nova Scotia,Opioids,Hospitalizations,Overall numbers,12,By year,2023,,,Number,88.0
+Accidental opioid-related poisoning hospitalizations,Ontario,Opioids,Hospitalizations,Overall numbers,35,By year,2023,,,Number,2990.0
+Accidental opioid-related poisoning hospitalizations,Prince Edward Island,Opioids,Hospitalizations,Overall numbers,11,By year,2023,,,Number,20.0
+Accidental opioid-related poisoning hospitalizations,Quebec,Opioids,Hospitalizations,Overall numbers,24,By year,2023,,,Number,0.0
+Accidental opioid-related poisoning hospitalizations,Saskatchewan,Opioids,Hospitalizations,Overall numbers,47,By year,2023,,,Number,414.0
+Accidental opioid-related poisoning hospitalizations,Territories,Opioids,Hospitalizations,Overall numbers,63,By year,2023,,,Number,35.0
+Accidental stimulant-related poisoning ED visits,Alberta,Stimulants,Emergency Department (ED) Visits,Overall numbers,48,By year,2023,,,Number,2598.0
+Accidental stimulant-related poisoning ED visits,Canada,Stimulants,Emergency Department (ED) Visits,Overall numbers,1,By year,2023,0 to 19 years,Female,Number,10513.0
+Accidental stimulant-related poisoning ED visits,Nova Scotia,Stimulants,Emergency Department (ED) Visits,Overall numbers,12,By year,2023,,,Number,28.0
+Accidental stimulant-related poisoning ED visits,Ontario,Stimulants,Emergency Department (ED) Visits,Overall numbers,35,By year,2023,,,Number,3814.0
+Accidental stimulant-related poisoning ED visits,Prince Edward Island,Stimulants,Emergency Department (ED) Visits,Overall numbers,11,By year,2023,,,Number,11.0
+Accidental stimulant-related poisoning ED visits,Saskatchewan,Stimulants,Emergency Department (ED) Visits,Overall numbers,47,By year,2023,,,Number,536.0
+Accidental stimulant-related poisoning ED visits,Yukon,Stimulants,Emergency Department (ED) Visits,Overall numbers,60,By year,2023,,,Number,29.0
+Accidental stimulant-related poisoning hospitalizations,Alberta,Stimulants,Hospitalizations,Overall numbers,48,By year,2023,,,Number,402.0
+Accidental stimulant-related poisoning hospitalizations,British Columbia,Stimulants,Hospitalizations,Overall numbers,59,By year,2023,,,Number,982.0
+Accidental stimulant-related poisoning hospitalizations,Canada,Stimulants,Hospitalizations,Overall numbers,1,By year,2023,0 to 19 years,Female,Number,4398.0
+Accidental stimulant-related poisoning hospitalizations,Manitoba,Stimulants,Hospitalizations,Overall numbers,46,By year,2023,,,Number,68.0
+Accidental stimulant-related poisoning hospitalizations,New Brunswick,Stimulants,Hospitalizations,Overall numbers,13,By year,2023,,,Number,43.0
+Accidental stimulant-related poisoning hospitalizations,Newfoundland and Labrador,Stimulants,Hospitalizations,Overall numbers,10,By year,2023,,,Number,7.0
+Accidental stimulant-related poisoning hospitalizations,Nova Scotia,Stimulants,Hospitalizations,Overall numbers,12,By year,2023,,,Number,11.0
+Accidental stimulant-related poisoning hospitalizations,Ontario,Stimulants,Hospitalizations,Overall numbers,35,By year,2023,,,Number,1240.0
+Accidental stimulant-related poisoning hospitalizations,Prince Edward Island,Stimulants,Hospitalizations,Overall numbers,11,By year,2023,,,Number,0.0
+Accidental stimulant-related poisoning hospitalizations,Quebec,Stimulants,Hospitalizations,Overall numbers,24,By year,2023,,,Number,0.0
+Accidental stimulant-related poisoning hospitalizations,Saskatchewan,Stimulants,Hospitalizations,Overall numbers,47,By year,2023,,,Number,162.0
+Accidental stimulant-related poisoning hospitalizations,Territories,Stimulants,Hospitalizations,Overall numbers,63,By year,2023,,,Number,10.0
+EMS responses to suspected opioid-related overdoses,Alberta,Opioids,Emergency Medical Services (EMS),Overall numbers,48,By year,2023,0 to 19 years,Female,Number,28271.0
+EMS responses to suspected opioid-related overdoses,British Columbia,Opioids,Emergency Medical Services (EMS),Overall numbers,59,By year,2023,0 to 19 years,Female,Number,44108.0
+EMS responses to suspected opioid-related overdoses,Canada,Opioids,Emergency Medical Services (EMS),Overall numbers,1,By year,2023,0 to 19 years,Female,Number,99854.0
+EMS responses to suspected opioid-related overdoses,New Brunswick,Opioids,Emergency Medical Services (EMS),Overall numbers,13,By year,2023,0 to 19 years,Female,Number,993.0
+EMS responses to suspected opioid-related overdoses,Newfoundland and Labrador,Opioids,Emergency Medical Services (EMS),Overall numbers,10,By year,2023,0 to 19 years,Female,Number,0.0
+EMS responses to suspected opioid-related overdoses,Northern and rural Manitoba,Opioids,Emergency Medical Services (EMS),Overall numbers,46,By year,2023,0 to 19 years,Female,Number,16.0
+EMS responses to suspected opioid-related overdoses,Nova Scotia,Opioids,Emergency Medical Services (EMS),Overall numbers,12,By year,2023,0 to 19 years,Female,Number,883.0
+EMS responses to suspected opioid-related overdoses,Ontario,Opioids,Emergency Medical Services (EMS),Overall numbers,35,By year,2023,0 to 19 years,Female,Number,11625.0
+EMS responses to suspected opioid-related overdoses,Saskatchewan,Opioids,Emergency Medical Services (EMS),Overall numbers,47,By year,2023,0 to 19 years,Female,Number,4370.0
+EMS responses to suspected opioid-related overdoses,"Whitehorse, Yukon",Opioids,Emergency Medical Services (EMS),Overall numbers,60,By year,2023,0 to 19 years,Female,Number,308.0
+EMS responses to suspected opioid-related overdoses,"Winnipeg, Manitoba",Opioids,Emergency Medical Services (EMS),Overall numbers,46,By year,2023,0 to 19 years,Female,Number,9280.0
+EMS responses to suspected opioid-related overdoses,"Yellowknife, Northwest Territories",Opioids,Emergency Medical Services (EMS),Overall numbers,61,By year,2023,0 to 19 years,Female,Number,0.0
+Intentional opioid-related poisoning ED visits,Canada,Opioids,Emergency Department (ED) Visits,Overall numbers,1,By year,2023,0 to 19 years,Female,Number,3974.0
+Intentional opioid-related poisoning hospitalizations,Canada,Opioids,Hospitalizations,Overall numbers,1,By year,2023,0 to 19 years,Female,Number,2251.0
+Intentional stimulant-related poisoning ED visits,Canada,Stimulants,Emergency Department (ED) Visits,Overall numbers,1,By year,2023,0 to 19 years,Female,Number,2483.0
+Intentional stimulant-related poisoning hospitalizations,Canada,Stimulants,Hospitalizations,Overall numbers,1,By year,2023,0 to 19 years,Female,Number,1356.0
+Suicide apparent opioid toxicity deaths,Canada,Opioids,Deaths,Overall numbers,1,By year,2023,,,Number,126.0
+Suicide apparent stimulant toxicity deaths,Canada,Stimulants,Deaths,Overall numbers,1,By year,2023,,,Number,40.0
+Total apparent opioid toxicity deaths,Alberta,Opioids,Deaths,Overall numbers,48,By year,2023,,,Number,3744.0
+Total apparent opioid toxicity deaths,British Columbia,Opioids,Deaths,Overall numbers,59,By year,2023,,,Number,5204.0
+Total apparent opioid toxicity deaths,Canada,Opioids,Deaths,Overall numbers,1,By year,2023,,,Number,17055.0
+Total apparent opioid toxicity deaths,Manitoba,Opioids,Deaths,Overall numbers,46,By year,2023,,,Number,660.0
+Total apparent opioid toxicity deaths,New Brunswick,Opioids,Deaths,Overall numbers,13,By year,2023,,,Number,196.0
+Total apparent opioid toxicity deaths,Newfoundland and Labrador,Opioids,Deaths,Overall numbers,10,By year,2023,,,Number,60.0
+Total apparent opioid toxicity deaths,Northwest Territories,Opioids,Deaths,Overall numbers,61,By year,2023,,,Number,6.0
+Total apparent opioid toxicity deaths,Nova Scotia,Opioids,Deaths,Overall numbers,12,By year,2023,,,Number,146.0
+Total apparent opioid toxicity deaths,Nunavut,Opioids,Deaths,Overall numbers,62,By year,2023,,,Number,0.0
+Total apparent opioid toxicity deaths,Ontario,Opioids,Deaths,Overall numbers,35,By year,2023,,,Number,5294.0
+Total apparent opioid toxicity deaths,Prince Edward Island,Opioids,Deaths,Overall numbers,11,By year,2023,,,Number,7.0
+Total apparent opioid toxicity deaths,Quebec,Opioids,Deaths,Overall numbers,24,By year,2023,,,Number,1072.0
+Total apparent opioid toxicity deaths,Saskatchewan,Opioids,Deaths,Overall numbers,47,By year,2023,,,Number,632.0
+Total apparent opioid toxicity deaths,Yukon,Opioids,Deaths,Overall numbers,60,By year,2023,,,Number,34.0
+Total apparent stimulant toxicity deaths,Alberta,Stimulants,Deaths,Overall numbers,48,By year,2023,,,Number,0.0
+Total apparent stimulant toxicity deaths,British Columbia,Stimulants,Deaths,Overall numbers,59,By year,2023,,,Number,3318.0
+Total apparent stimulant toxicity deaths,Canada,Stimulants,Deaths,Overall numbers,1,By year,2023,,,Number,9586.0
+Total apparent stimulant toxicity deaths,Manitoba,Stimulants,Deaths,Overall numbers,46,By year,2023,,,Number,738.0
+Total apparent stimulant toxicity deaths,New Brunswick,Stimulants,Deaths,Overall numbers,13,By year,2023,,,Number,156.0
+Total apparent stimulant toxicity deaths,Newfoundland and Labrador,Stimulants,Deaths,Overall numbers,10,By year,2023,,,Number,76.0
+Total apparent stimulant toxicity deaths,Northwest Territories,Stimulants,Deaths,Overall numbers,61,By year,2023,,,Number,6.0
+Total apparent stimulant toxicity deaths,Nova Scotia,Stimulants,Deaths,Overall numbers,12,By year,2023,,,Number,136.0
+Total apparent stimulant toxicity deaths,Nunavut,Stimulants,Deaths,Overall numbers,62,By year,2023,,,Number,0.0
+Total apparent stimulant toxicity deaths,Ontario,Stimulants,Deaths,Overall numbers,35,By year,2023,,,Number,4536.0
+Total apparent stimulant toxicity deaths,Prince Edward Island,Stimulants,Deaths,Overall numbers,11,By year,2023,,,Number,0.0
+Total apparent stimulant toxicity deaths,Quebec,Stimulants,Deaths,Overall numbers,24,By year,2023,,,Number,0.0
+Total apparent stimulant toxicity deaths,Saskatchewan,Stimulants,Deaths,Overall numbers,47,By year,2023,,,Number,588.0
+Total apparent stimulant toxicity deaths,Yukon,Stimulants,Deaths,Overall numbers,60,By year,2023,,,Number,32.0
+Total opioid-related poisoning ED visits,Alberta,Opioids,Emergency Department (ED) Visits,Overall numbers,48,By year,2023,,,Number,14032.0
+Total opioid-related poisoning ED visits,British Columbia,Opioids,Emergency Department (ED) Visits,Overall numbers,59,By year,2023,,,Number,11950.0
+Total opioid-related poisoning ED visits,Canada,Opioids,Emergency Department (ED) Visits,Overall numbers,1,By year,2023,0 to 19 years,Female,Number,85104.0
+Total opioid-related poisoning ED visits,Nova Scotia,Opioids,Emergency Department (ED) Visits,Overall numbers,12,By year,2023,,,Number,62.0
+Total opioid-related poisoning ED visits,Ontario,Opioids,Emergency Department (ED) Visits,Overall numbers,35,By year,2023,,,Number,27118.0
+Total opioid-related poisoning ED visits,Prince Edward Island,Opioids,Emergency Department (ED) Visits,Overall numbers,11,By year,2023,,,Number,140.0
+Total opioid-related poisoning ED visits,Saskatchewan,Opioids,Emergency Department (ED) Visits,Overall numbers,47,By year,2023,,,Number,3666.0
+Total opioid-related poisoning ED visits,Yukon,Opioids,Emergency Department (ED) Visits,Overall numbers,60,By year,2023,,,Number,122.0
+Total opioid-related poisoning hospitalizations,Alberta,Opioids,Hospitalizations,Overall numbers,48,By year,2023,,,Number,2454.0
+Total opioid-related poisoning hospitalizations,British Columbia,Opioids,Hospitalizations,Overall numbers,59,By year,2023,,,Number,4560.0
+Total opioid-related poisoning hospitalizations,Canada,Opioids,Hospitalizations,Overall numbers,1,By year,2023,0 to 19 years,Female,Number,19348.0
+Total opioid-related poisoning hospitalizations,Manitoba,Opioids,Hospitalizations,Overall numbers,46,By year,2023,,,Number,308.0
+Total opioid-related poisoning hospitalizations,New Brunswick,Opioids,Hospitalizations,Overall numbers,13,By year,2023,,,Number,206.0
+Total opioid-related poisoning hospitalizations,Newfoundland and Labrador,Opioids,Hospitalizations,Overall numbers,10,By year,2023,,,Number,128.0
+Total opioid-related poisoning hospitalizations,Nova Scotia,Opioids,Hospitalizations,Overall numbers,12,By year,2023,,,Number,180.0
+Total opioid-related poisoning hospitalizations,Ontario,Opioids,Hospitalizations,Overall numbers,35,By year,2023,,,Number,4424.0
+Total opioid-related poisoning hospitalizations,Prince Edward Island,Opioids,Hospitalizations,Overall numbers,11,By year,2023,,,Number,38.0
+Total opioid-related poisoning hospitalizations,Quebec,Opioids,Hospitalizations,Overall numbers,24,By year,2023,,,Number,0.0
+Total opioid-related poisoning hospitalizations,Saskatchewan,Opioids,Hospitalizations,Overall numbers,47,By year,2023,,,Number,554.0
+Total opioid-related poisoning hospitalizations,Territories,Opioids,Hospitalizations,Overall numbers,63,By year,2023,,,Number,64.0
+Total stimulant-related poisoning ED visits,Alberta,Stimulants,Emergency Department (ED) Visits,Overall numbers,48,By year,2023,,,Number,3564.0
+Total stimulant-related poisoning ED visits,British Columbia,Stimulants,Emergency Department (ED) Visits,Overall numbers,59,By year,2023,,,Number,414.0
+Total stimulant-related poisoning ED visits,Canada,Stimulants,Emergency Department (ED) Visits,Overall numbers,1,By year,2023,0 to 19 years,Female,Number,16406.0
+Total stimulant-related poisoning ED visits,Nova Scotia,Stimulants,Emergency Department (ED) Visits,Overall numbers,12,By year,2023,,,Number,76.0
+Total stimulant-related poisoning ED visits,Ontario,Stimulants,Emergency Department (ED) Visits,Overall numbers,35,By year,2023,,,Number,5914.0
+Total stimulant-related poisoning ED visits,Prince Edward Island,Stimulants,Emergency Department (ED) Visits,Overall numbers,11,By year,2023,,,Number,39.0
+Total stimulant-related poisoning ED visits,Saskatchewan,Stimulants,Emergency Department (ED) Visits,Overall numbers,47,By year,2023,,,Number,910.0
+Total stimulant-related poisoning ED visits,Yukon,Stimulants,Emergency Department (ED) Visits,Overall numbers,60,By year,2023,,,Number,34.0
+Total stimulant-related poisoning hospitalizations,Alberta,Stimulants,Hospitalizations,Overall numbers,48,By year,2023,,,Number,656.0
+Total stimulant-related poisoning hospitalizations,British Columbia,Stimulants,Hospitalizations,Overall numbers,59,By year,2023,,,Number,1458.0
+Total stimulant-related poisoning hospitalizations,Canada,Stimulants,Hospitalizations,Overall numbers,1,By year,2023,0 to 19 years,Female,Number,7307.0
+Total stimulant-related poisoning hospitalizations,Manitoba,Stimulants,Hospitalizations,Overall numbers,46,By year,2023,,,Number,116.0
+Total stimulant-related poisoning hospitalizations,New Brunswick,Stimulants,Hospitalizations,Overall numbers,13,By year,2023,,,Number,140.0
+Total stimulant-related poisoning hospitalizations,Newfoundland and Labrador,Stimulants,Hospitalizations,Overall numbers,10,By year,2023,,,Number,66.0
+Total stimulant-related poisoning hospitalizations,Nova Scotia,Stimulants,Hospitalizations,Overall numbers,12,By year,2023,,,Number,84.0
+Total stimulant-related poisoning hospitalizations,Ontario,Stimulants,Hospitalizations,Overall numbers,35,By year,2023,,,Number,2006.0
+Total stimulant-related poisoning hospitalizations,Prince Edward Island,Stimulants,Hospitalizations,Overall numbers,11,By year,2023,,,Number,8.0
+Total stimulant-related poisoning hospitalizations,Quebec,Stimulants,Hospitalizations,Overall numbers,24,By year,2023,,,Number,0.0
+Total stimulant-related poisoning hospitalizations,Saskatchewan,Stimulants,Hospitalizations,Overall numbers,47,By year,2023,,,Number,298.0
+Total stimulant-related poisoning hospitalizations,Territories,Stimulants,Hospitalizations,Overall numbers,63,By year,2023,,,Number,39.0
