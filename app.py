@@ -7,7 +7,7 @@ import os
 # Load Trained Model & Label Encoder
 model_path = "models/xgboost_model.pkl"
 encoder_path = "models/label_encoder.pkl"
-data_path = "data/processed/cleaned_drug_testing_data.csv"  # Load the dataset for naloxone response analysis
+data_url = "https://raw.githubusercontent.com/nidhi0805/HarmReduction-Project/refs/heads/main/Data/Processed/cleaned_drug_testing_data.csv"  # Load the dataset for naloxone response analysis
 
 if os.path.exists(model_path) and os.path.exists(encoder_path):
     model = joblib.load(model_path)
@@ -17,7 +17,7 @@ else:
     st.stop()
 
 # Load Dataset to Analyze Naloxone Response
-df = pd.read_csv(data_path)
+df = pd.read_csv(data_url)
 
 # Get list of drugs from Label Encoder
 drug_list = sorted(le.classes_.tolist())
