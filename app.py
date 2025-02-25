@@ -1,80 +1,90 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import joblib
-import os
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.preprocessing import LabelEncoder
+from imblearn.over_sampling import SMOTE
+from sklearn.linear_model import LogisticRegression
+from xgboost import XGBClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, classification_report
 
-# Load Trained Model & Label Encoder
-model_path = "models/xgboost_model.pkl"
-encoder_path = "models/label_encoder.pkl"
-data_url = "https://raw.githubusercontent.com/nidhi0805/HarmReduction-Project/refs/heads/main/Data/Processed/cleaned_drug_testing_data.csv"  # Load the dataset for naloxone response analysis
+# 🚀 Load Dataset
+file_path = "Data/Processed/drug_testing_data_with_nitazene_presence.csv"
+df = pd.read_csv(file_path)
+df.fillna("", inplace=True)
 
-if os.path.exists(model_path) and os.path.exists(encoder_path):
-    model = joblib.load(model_path)
-    le = joblib.load(encoder_path)
-else:
-    st.error("🚨 Model files not found! Ensure 'models/' contains 'xgboost_model.pkl' & 'label_encoder.pkl'")
-    st.stop()
+# 🚀 Define Target Variable (Overdose Risk)
+df["Complex_Overdose_Risk"] = df["Notes"].apply(
+    lambda x: 1 if "complex overdose" in x.lower() or "not fully reversible" in x.lower() else 0
+)
 
-# Load Dataset to Analyze Naloxone Response
-df = pd.read_csv(data_url)
+# 🚀 Drop Potential Leakage Feature
+df.drop(columns=["Nitazene_Present"], inplace=True, errors="ignore")
 
-# Get list of drugs from Label Encoder
-drug_list = sorted(le.classes_.tolist())
+# 🚀 Create `Fentanyl_Present` Feature from `Notes`
+df["Fentanyl_Present"] = df["Notes"].apply(lambda x: 1 if "fentanyl" in x.lower() else 0)
 
-# Streamlit UI
-st.title("💊 Drug Overdose Risk Prediction")
-st.write("Select a drug to predict **complex overdose risk** and **naloxone effectiveness**.")
+# 🚀 Combine Text Columns
+combined_text = df["Description"] + " " + df["Notes"]
 
-# Dropdown for Drug Selection
-drug_name = st.selectbox("🔹 Choose a Drug", drug_list)
+# 🚀 TF-IDF Feature Engineering
+tfidf_vectorizer = TfidfVectorizer(stop_words="english", max_features=1200, ngram_range=(1, 3))
+text_features = tfidf_vectorizer.fit_transform(combined_text)
 
-def get_naloxone_effectiveness(drug_name):
-    # Normalize Drug Name for Matching
-    drug_df = df[df["Sold as"].str.strip().str.lower() == drug_name.strip().lower()]
+# --- Scale TF-IDF features ---
+scale_factor = 10
+text_features = text_features * scale_factor
+
+# 🚀 Encode Categorical Feature
+le_category = LabelEncoder()
+df["Category_encoded"] = le_category.fit_transform(df["Category"])
+
+# 🚀 Prepare Features
+X_structured = df[["Category_encoded"]].values
+X = np.hstack((X_structured, text_features.toarray()))
+y = df["Complex_Overdose_Risk"]
+
+# 🚀 Handle Class Imbalance
+smote = SMOTE(sampling_strategy=0.75, random_state=42)
+X_resampled, y_resampled = smote.fit_resample(X, y)
+
+# 🚀 Split Data
+X_train, X_test, y_train, y_test = train_test_split(X_resampled, y_resampled, test_size=0.2, random_state=42)
+
+# 🚀 Train Logistic Regression (Only Logistic Regression is used now)
+log_reg = LogisticRegression(max_iter=1000)
+log_reg.fit(X_train, y_train)
+
+# 🚀 Prediction Function (Uses only Logistic Regression)
+def predict_overdose_risk(description, category, notes=""):
+    combined_input = description + " " + notes
+    text_features_input = tfidf_vectorizer.transform([combined_input]) * scale_factor
     
-    print(f"🔍 Checking Drug: {drug_name}")
-    print(f"🔹 Total Rows Found: {len(drug_df)}")
-    
-    if len(drug_df) == 0:
-        return 0.0  # No data found for this drug
-    
-    print(drug_df[["Sold as", "Naloxone_Response"]].head())  # Debugging
-    
-    # Ensure Naloxone Response is Numeric
-    drug_df["Naloxone_Response"] = pd.to_numeric(drug_df["Naloxone_Response"], errors="coerce").fillna(0).astype(int)
-    
-    # Compute Effectiveness
-    total_cases = len(drug_df)
-    responsive_cases = drug_df["Naloxone_Response"].sum()
+    # Encode category
+    if category in le_category.classes_:
+        category_encoded = le_category.transform([category])[0]
+    else:
+        return "Unknown category. Please enter a valid drug category."
 
-    # Debugging Output
-    print(f"🔹 Total Cases: {total_cases}, Responsive Cases: {responsive_cases}")
+    structured_features = np.array([[category_encoded]])
+    input_features = np.hstack((structured_features, text_features_input.toarray()))
 
-    # Compute Percentage
-    response_percentage = round((responsive_cases / total_cases) * 100, 2)
+    # Always using Logistic Regression
+    risk_probability = log_reg.predict_proba(input_features)[0][1]
 
-    return response_percentage
+    return round(risk_probability * 100, 2)
 
+# 🚀 Streamlit UI
+st.title("🚑 Overdose Risk Prediction App")
+st.write("This app predicts the overdose risk based on drug description, category, and additional notes.")
 
+# 🚀 User Inputs
+description = st.text_input("Enter Drug Description", "I found a blue tablet")
+category = st.selectbox("Select Drug Category", le_category.classes_)
+notes = st.text_area("Additional Notes (Optional)", "This is a small round pill.")
 
-# Prediction Function
-def predict_complex_overdose(drug_name):
-    if drug_name not in le.classes_:
-        st.warning(f"⚠️ '{drug_name}' not in trained vocabulary! Results may be inaccurate.")
-        return 0.0, 0.0
-
-    drug_encoded = le.transform([drug_name])[0]
-    input_features = np.array([[drug_encoded, 1, 1]])  # Assume fentanyl=1, naloxone_response=1
-    prediction = round(model.predict_proba(input_features)[0][1] * 100, 2)  # Round to 2 decimal places
-    
-    # Get naloxone effectiveness percentage
-    response_percentage = get_naloxone_effectiveness(drug_name)
-    
-    return prediction, response_percentage
-
-# Display Prediction
-if st.button("🚀 Predict"):
-    risk, response_percentage = predict_complex_overdose(drug_name)
-    st.write(f"🔴 **Overdose Risk:** {risk:.2f}%")
-    st.write(f"💊 **Naloxone Effectiveness:** {response_percentage:.2f}%")
+# 🚀 Predict Button (No Model Choice, Always Logistic Regression)
+if st.button("Predict Overdose Risk"):
+    prediction = predict_overdose_risk(description, category, notes)
+    st.success(f" Complex Overdose Risk: {prediction}%")

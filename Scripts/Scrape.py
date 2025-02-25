@@ -24,13 +24,23 @@ def scrape_page(url):
             image_url = None
 
         try:
-            category = row.find('td', {'class': 'description'}).find('strong').text.strip()
+            # Find the description cell and extract all text
+            description_td = row.find('td', {'class': 'description'}).get_text(separator=" ").strip()
+
+            # Initialize variables
+            category = None
+            description = None
+
+            # Extract Category
+            if "Category:" in description_td:
+                category = description_td.split("Category:")[1].split("Description:")[0].strip()
+
+            # Extract Description
+            if "Description:" in description_td:
+                description = description_td.split("Description:")[1].strip()
+
         except AttributeError:
             category = None
-
-        try:
-            description = row.find('td', {'class': 'description'}).find('label').text.strip()
-        except AttributeError:
             description = None
 
         try:
