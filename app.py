@@ -9,26 +9,26 @@ from xgboost import XGBClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 
-# 🚀 Load Dataset
+# Load Dataset
 file_path = "https://raw.githubusercontent.com/nidhi0805/HarmReduction-Project/refs/heads/main/Data/Processed/drug_testing_data_with_nitazene_presence.csv"
 df = pd.read_csv(file_path)
 df.fillna("", inplace=True)
 
-# 🚀 Define Target Variable (Overdose Risk)
+# Define Target Variable (Overdose Risk)
 df["Complex_Overdose_Risk"] = df["Notes"].apply(
     lambda x: 1 if "complex overdose" in x.lower() or "not fully reversible" in x.lower() else 0
 )
 
-# 🚀 Drop Potential Leakage Feature
+# Drop Potential Leakage Feature
 df.drop(columns=["Nitazene_Present"], inplace=True, errors="ignore")
 
-# 🚀 Create `Fentanyl_Present` Feature from `Notes`
+# Create `Fentanyl_Present` Feature from `Notes`
 df["Fentanyl_Present"] = df["Notes"].apply(lambda x: 1 if "fentanyl" in x.lower() else 0)
 
-# 🚀 Combine Text Columns
+# Combine Text Columns
 combined_text = df["Description"] + " " + df["Notes"]
 
-# 🚀 TF-IDF Feature Engineering
+# TF-IDF Feature Engineering
 tfidf_vectorizer = TfidfVectorizer(stop_words="english", max_features=1200, ngram_range=(1, 3))
 text_features = tfidf_vectorizer.fit_transform(combined_text)
 
@@ -36,27 +36,27 @@ text_features = tfidf_vectorizer.fit_transform(combined_text)
 scale_factor = 10
 text_features = text_features * scale_factor
 
-# 🚀 Encode Categorical Feature
+# Encode Categorical Feature
 le_category = LabelEncoder()
 df["Category_encoded"] = le_category.fit_transform(df["Category"])
 
-# 🚀 Prepare Features
+# Prepare Features
 X_structured = df[["Category_encoded"]].values
 X = np.hstack((X_structured, text_features.toarray()))
 y = df["Complex_Overdose_Risk"]
 
-# 🚀 Handle Class Imbalance
+# Handle Class Imbalance
 smote = SMOTE(sampling_strategy=0.75, random_state=42)
 X_resampled, y_resampled = smote.fit_resample(X, y)
 
-# 🚀 Split Data
+# Split Data
 X_train, X_test, y_train, y_test = train_test_split(X_resampled, y_resampled, test_size=0.2, random_state=42)
 
-# 🚀 Train Logistic Regression (Only Logistic Regression is used now)
+# Train Logistic Regression 
 log_reg = LogisticRegression(max_iter=1000)
 log_reg.fit(X_train, y_train)
 
-# 🚀 Prediction Function (Uses only Logistic Regression)
+# Prediction Function 
 def predict_overdose_risk(description, category, notes=""):
     combined_input = description + " " + notes
     text_features_input = tfidf_vectorizer.transform([combined_input]) * scale_factor
@@ -75,11 +75,11 @@ def predict_overdose_risk(description, category, notes=""):
 
     return round(risk_probability * 100, 2)
 
-# 🚀 Streamlit UI
+# Streamlit UI
 st.title("🚑 Overdose Risk Prediction App")
 st.write("This app predicts the overdose risk based on drug description, category, and additional notes.")
 
-# 🚀 User Inputs
+# User Inputs
 description = st.text_input("Enter Drug Description", "I found a blue tablet")
 category = st.selectbox("Select Drug Category", le_category.classes_)
 notes = st.text_area("Additional Notes (Optional)", "This is a small round pill.")
