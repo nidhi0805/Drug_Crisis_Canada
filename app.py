@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 
 # 🚀 Load Dataset
-file_path = "Data/Processed/drug_testing_data_with_nitazene_presence.csv"
+file_path = "https://raw.githubusercontent.com/nidhi0805/HarmReduction-Project/refs/heads/main/Data/Processed/drug_testing_data_with_nitazene_presence.csv"
 df = pd.read_csv(file_path)
 df.fillna("", inplace=True)
 
